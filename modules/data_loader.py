@@ -9,11 +9,12 @@ from pathlib import Path
 # ---------------------------------------------------------------------
 # PATHS
 # ---------------------------------------------------------------------
-LAKE_CSV_PATH  = r"D:\MSWRE\SWOT\Dashboard\Datas\NP_Lake_Datasets.csv"
-RIVER_CSV_PATH = r"D:\MSWRE\SWOT\Dashboard\Datas\NP_River_Nodes_Datasets.csv"
-
 BASE_DIR = Path(__file__).resolve().parent.parent
+DATAS_DIR = BASE_DIR / "Datas"
 SHAPEFILE_DIR = BASE_DIR / "Shapefiles"
+
+LAKE_CSV_PATH  = DATAS_DIR / "NP_Lake_Datasets.csv"
+RIVER_CSV_PATH = DATAS_DIR / "NP_River_Nodes_Datasets.csv"
 
 
 # =====================================================================
